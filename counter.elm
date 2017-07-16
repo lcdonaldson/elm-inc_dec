@@ -7,7 +7,14 @@ main =
 
 
 view model =
-  div []
+  div [
+        style
+        [
+          ("margin", "0")
+          ,("padding", "1rem 2rem")
+          ,("background-color", "#EAEAEA")
+        ]
+      ]
     [ button [ onClick Increment ] [ text "+" ]
     , div [] [ text (toString model) ]
     , button [ onClick Decrement ] [ text "-" ]
