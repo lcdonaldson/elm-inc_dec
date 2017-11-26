@@ -19,10 +19,10 @@ view model =
     img [ style [("margin-top", "20px"), ("width", "32px"), ("height", "32px")], src "https://s-media-cache-ak0.pinimg.com/236x/a3/da/3f/a3da3f6884ed150b719c95669d21976e.jpg"][]
     button [ onClick Increment ] [ text "+" ]
     , div [] [ text (toString model) ]
-    , button [ onClick Decrement ] [ text "-" ]
+    , button [ style[("border-radius","4px")] onClick Decrement ] [ text "-" ]
     , div []
       [
-        button [onClick Clear] [ text "Clear"] 
+        button [style[("border-radius","4px")] onClick Clear] [ text "Clear"] 
       ]
     ]
     
